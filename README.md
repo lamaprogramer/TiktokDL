@@ -1,3 +1,9 @@
+# Heads Up
+
+- This process can take hours depending on the number of videos you have.
+
+- Keep an eye on your device storage, downloading large amounts of videos will use a lot of storage quickly.
+
 # How To Use
 
 ## Prerequisites
@@ -20,9 +26,12 @@
 
 - Each video will have its own folder that pairs it with its metadata file.
 
-- This process can take hours, depending on the amount of saved videos you have.
-
-
 # Tweaking The Script
 
-- At the top of the file, there is a variable called `thread_count`. This changes the number of downloads that can happening at once. The default is 20, as setting it too high may result in a large consumption of computer resources.
+At the top of the file, there are variables you can use to tweak the script abit without digging through code.
+
+- `thread_count`: This changes the number of downloads that can happening at once. The default is 20, as setting it too high may result in a large consumption of computer resources.
+
+- `tiktok_data_file_name`: The name of the file containing your tiktok data. The default is "user_data_tiktok.json", as I believe this is the default name when you download your data.
+
+- `save_metadaa`: Whether to save the metadata of the video or not. The default is `True`. Set it to `False` if you dont want the metadata. (Metadata contains info like the video title, hashtags, video publisher, and some more technical stuff)
