@@ -2,7 +2,7 @@
 
 ## Prerequisites
 
-- Make sure python is installed
+- Make sure Python is installed
 
 - Make sure `yt-dlp` is installed, you can install it with `pip install yt-dlp`
 
@@ -16,7 +16,7 @@
 
 ## Output
 
-- Your favorited videos, as well as metadata such as title, like count, favorite count, etc. will now be saved into a `downloads` folder in the same directory.
+- Your favorited videos, as well as metadata such as title, like count, favorite count, etc. will be saved into a `downloads` folder in the same directory.
 
 - Each video will have its own folder that pairs it with its metadata file.
 
