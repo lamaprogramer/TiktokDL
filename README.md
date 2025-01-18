@@ -14,4 +14,8 @@
 
 - Open said folder in your terminal and run the python file
 
+## Output
+
 - Your favorited videos, as well as metadata such as title, like count, favorite count, etc. will now be saved into a `downloads` folder in the same directory.
+
+- Each video will have its own folder that pairs it with its metadata file.
