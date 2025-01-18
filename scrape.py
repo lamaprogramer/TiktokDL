@@ -2,11 +2,15 @@ import yt_dlp
 import concurrent.futures
 import json
 
+# Script Settings
+tiktok_data_file_name = "user_data_tiktok.json"
+save_metadata = True
 thread_count = 20
 
-# Fetch user data file
+
+# Fetch Tiktok data file
 def get_json():
-  with open('user_data_tiktok.json', 'r', encoding="utf8") as f:
+  with open(tiktok_data_file_name, 'r', encoding="utf8") as f:
     data = json.load(f)
     f.close()
     return data
@@ -18,7 +22,7 @@ def download_tiktok_video(url: str, output_name: str = "test", output_path: str 
     'format': 'best',  # Download the best available format
     'quiet': True,    # Display progress
     'noplaylist': True, # Ensure only a single video is downloaded
-    'writeinfojson': True,
+    'writeinfojson': save_metadata,
   }
 
   try:
